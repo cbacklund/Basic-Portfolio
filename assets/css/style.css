@@ -13,41 +13,56 @@ header {
     background-color: #4aaaa5;
     border-color: #cccccc;
     color: white; 
+    width: 200px;
     line-height: 3em;
     padding: 1em 2em;
     font-weight: bold;
     display: block;
-    position: fixed;
+    float: left;
+    text-align: center;
 }
+
 nav {
     background: #ffffff;
     float: right;
     line-height: 3em;
+    padding: 20px;
 }
 
 section {
-    float: clear;
+    clear: both;
     background: #ffffff;
     padding: 30px;
 }
 
-h1 h2 h3 h4 h5 h6 {
+section img {
+    border-radius: 50%;
+    border-color: green;
+    border-style: double;
+    border-width: 10px;
+    margin-bottom: 10px;
+
+}
+
+h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 section h1 {
     color: #4aaaa5;
     line-height: 3em;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
 }
 
-ul li {
+nav li {
     margin: 0;
     padding: 0;
     list-style: none;
     float: left;
 }
 
-li a {
+nav a {
     display: block;
     line-height: 2em;
     padding: 0 1em;
@@ -55,22 +70,37 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+nav a:hover {
     background-color: #4aaaa5;
     color: white;
-}
-
-li {
-    display: inline;
-
 }
 
 footer{
     background-color: #666666;
     color: white;
-    height: 60px;
+    padding-top: 20px;
     text-align: center; 
     border-top: 10px solid #4aaaa5;
     position: -webkit-sticky; /* Safari */
     position: sticky;
+}
+
+.head {
+    width: 960px;
+    background: white;
+}
+
+port1 img {
+    position: relative;
+}
+
+.port1 p {
+    display: block;
+    background: #4aaaa5;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    margin-top: -40px;
 }
